@@ -1,0 +1,9 @@
+[tool]
+id = "io.github.sevgjan.ask"
+label = "Ask"
+versionCode = 1
+versionName = "0.1.0"
+permissions = ["android.permission.INTERNET", "android.permission.ACCESS_NETWORK_STATE"]
+capabilities = ["tool-manager-provider"]
+serverPackage = "com.lightos"
+orientation = "portrait"
