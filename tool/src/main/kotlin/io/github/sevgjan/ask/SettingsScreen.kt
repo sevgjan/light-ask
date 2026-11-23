@@ -55,7 +55,7 @@ class SettingsScreen(sealedActivity: SealedLightActivity) : SimpleLightScreen<Un
             Section("API keys")
             OptionRow("Anthropic", if (anthropic) "saved" else "not set") { enterKey(Provider.ANTHROPIC) }
             OptionRow("OpenAI", if (openai) "saved" else "not set") { enterKey(Provider.OPENAI) }
-            ActionRow("Get keys from a computer", "Plug in the phone, then on the computer: python3 tools/light-setup.py ask") {
+            ActionRow("Get keys from a computer", "Plug in the phone, then on the computer: python3 scripts/light-setup.py") {
                 Ask.checkComputer(quiet = false)
             }
             Note("Keys are encrypted with a key kept in the phone's Android Keystore. The OpenAI key also draws pictures and turns speech into text, whichever model answers.")

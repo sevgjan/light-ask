@@ -95,7 +95,7 @@ class HomeScreen(sealedActivity: SealedLightActivity) : SimpleLightScreen<Unit>(
             val list = chats
             when {
                 !anyKey -> CenteredNote(
-                    "Add an Anthropic or OpenAI API key in settings. Or plug the phone into your computer and run:\n\npython3 tools/light-setup.py ask",
+                    "Add an Anthropic or OpenAI API key in settings. Or plug the phone into your computer and run:\n\npython3 scripts/light-setup.py",
                     Modifier.weight(1f),
                 )
                 list == null -> Unit

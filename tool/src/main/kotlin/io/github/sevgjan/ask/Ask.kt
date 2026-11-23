@@ -66,7 +66,7 @@ object Ask {
                 runCatching { UsbSetup.check(PACKAGE, ToolEntryPoint.getToolManagerManifest(), context.fileShare) }.getOrDefault(0)
             }
             if (got > 0) keysArrived(store.applySetupForm())
-            else if (!quiet) notice.value = "Nothing waiting. Plug the phone into the computer and run: python3 tools/light-setup.py ask"
+            else if (!quiet) notice.value = "Nothing waiting. Plug the phone into the computer and run: python3 scripts/light-setup.py"
         }
     }
 
