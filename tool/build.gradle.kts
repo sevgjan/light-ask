@@ -59,6 +59,8 @@ kotlin {
 
 dependencies {
     implementation(project(":sdk:client"))
+    // Sideload-only: colour on the grayscale screen, saving pictures, the camera, opening links. See ../engine.
+    implementation(project(":engine"))
     testImplementation(libs.kotlin.test)
     ksp(libs.androidx.room.compiler)
 }
